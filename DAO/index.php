@@ -32,11 +32,19 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+---altenrando usuario---
+$usuario = new Usuario();
+$usuario->loadById(10);
+$usuario->update("professor", "321654");
+echo $usuario;
+*/
+
 $usuario = new Usuario();
 
-$usuario->loadById(10);
+$usuario->loadById(20);
 
-$usuario->update("professor", "321654");
+$usuario->delete();
 
 echo $usuario;
 
